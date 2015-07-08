@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Lars Jacobson</title>
+  <link href='http://fonts.googleapis.com/css?family=Sansita+One' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/style-sass.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1><a href="index.html">Lars Jacobson</a></h1>
+    <!-- <nav>
+      <ul>
+        <li><a href="index.html" class="selected">Web Sites</a></li>
+        <li><a href="contact.html">Mobile Apps</a></li>
+      </ul>
+    </nav> -->
+    <div class="tagline">Web and Mobile App Developer</div>
+  </header>
+  
+
+
+  <section>
+
+    <ul>
+        <li class="selected">Web Sites</li>
+        <li class="far-right-tab"><a href="apps.html">Mobile Apps</a></li>
+      </ul>
+
+    <article>
+
+      <!-- <div class="date">May 9, 2015</div> -->
+      <h2>Web Sites</h2>
+      <p>I’ve worked as both a web designer and developer on projects ranging from interactive demos to traditional web sites. If you need help creating a new site or updating an existing one, I can help! </p>
+      <h3>Is your site mobile friendly?</h3>
+      <p>Google recently made a change that <a href="http://googlewebmastercentral.blogspot.com/2015/04/rolling-out-mobile-friendly-update.html" target="blank">boosts mobile friendly web sites</a>. If your web site isn’t easy to use on a mobile device, not only is it harder for customers to view your content, it’s harder for customers to find your site to begin with. To test if your site is mobile friendly, use <a href="https://www.google.com/webmasters/tools/mobile-friendly/" target="blank">Google’s site analyzer tool</a>. If your site doesn’t pass, I can help you update your site so it does.</p>
+      <h3>Interactive Content</h3>
+      <p>I have over 10 years experience as a Flash developer. In that time I developed interactive demos, banners, e-training modules, and video players. With HTML5 and JavaScript, I can develop interactive content that is inline with todays web standards.</p>
+      <h3>Showcase Site: SFNY Pizza</h3>
+      <p>I designed and developed this site for SFNY Pizza. Responsive design was used to create a web site that is easy to use on both browser and mobile devices. An example of the mobile version can be viewed here or you can visit the real site here.</p>
+      <p><a href="http://www.sfnypizza.com" target="blank">View SFNY Site ></a></p>
+      
+    </article>
+  </section>
+
+  <aside>
+    <h4>Contact</h4>
+    <div class='aside-portfolio'>
+      <p>I’m available for freelance projects as my schedule permits. If you have a project I’d be a good fit 
+for get in touch!</p>
+      <!--<img src="img/lj.png" alt="Lars Jacobson Photo"/>-->
+    </div>
+    <div id="contact-form-container">
+           <form id="contact-form" action="contact/contact-form.php" method="post">
+            <input id="senderName" type="text" name="name" placeholder="Name" required/><br>
+            <input id="senderEmail" type="text" name="email" placeholder="Email" required/><br>
+            <!-- <input id="subject" type="text" name="subject" placeholder="Subject"/><br> -->
+            <textarea id="senderMessage" name="message" placeholder="Message" required></textarea><br>
+            <input class="send" type="submit" value="Send">
+          </form>
+        </div>
+  </aside>
+
+  <div id="sendingMessage" class="statusMessage"><p>Sending your message. Please wait...</p></div>
+  <div id="successMessage" class="statusMessage"><p>Thanks for sending your message! We'll get back to you shortly.</p></div>
+  <div id="failureMessage" class="statusMessage"><p>There was a problem sending your message. Please try again.</p></div>
+  <div id="incompleteMessage" class="statusMessage"><p>Please complete all the fields in the form before sending.</p></div>
+  
+
+  <footer>
+  &copy; 2015 Lars Jacobson  -  <a href="index.html">Web Sites</a> | <a href="apps.html">Mobile Apps</a>
+  </footer>
+</div>
+
+
+  <script src="js/jquery-1.11.3.min.js"></script>
+  <script src="js/contact-form.js"></script>
+</body>
+</html>
